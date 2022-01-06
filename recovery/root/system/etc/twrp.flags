@@ -13,15 +13,15 @@ odm		/odm		ext4							wait,logical,first_stage_mount
 
 # Physical partitions
 /metadata	ext4		/dev/block/platform/13520000.ufs/by-name/metadata	flags=backup=1;display="Metadata"
-/boot		emmc		/dev/block/platform/13520000.ufs/by-name/boot		flags=backup=1;display="Boot";flashimg=1
-/recovery	emmc		/dev/block/platform/13520000.ufs/by-name/recovery	flags=backup=1;display="Recovery";flashimg=1
+/boot		emmc		/dev/block/platform/13520000.ufs/by-name/boot		flags=backup=1;flashimg;display="Boot"
+/recovery	emmc		/dev/block/platform/13520000.ufs/by-name/recovery	flags=backup=1;flashimg;display="Recovery"
 /data		f2fs		/dev/block/platform/13520000.ufs/by-name/userdata
 /cache		ext4		/dev/block/platform/13520000.ufs/by-name/cache		flags=backup=1;display="Cache"
 /efs		emmc		/dev/block/platform/13520000.ufs/by-name/efs		flags=backup=1;display="EFS"
 /sec_efs	emmc		/dev/block/platform/13520000.ufs/by-name/sec_efs	flags=backup=1;display="Sec EFS"
 /modem		emmc		/dev/block/platform/13520000.ufs/by-name/radio		flags=backup=1;display="Modem"
 /misc		emmc		/dev/block/platform/13520000.ufs/by-name/misc
-/dtbo		emmc		/dev/block/platform/13520000.ufs/by-name/dtbo		flags=backup=1;display="Dtbo"
+/dtbo		emmc		/dev/block/platform/13520000.ufs/by-name/dtbo		flags=backup=1;flashimg;display="Dtbo"
 /optics_image	emmc		/dev/block/platform/13520000.ufs/by-name/optics		flags=backup=1;flashimg;display="Optics Image"
 /prism_image	emmc		/dev/block/platform/13520000.ufs/by-name/prism		flags=backup=1;flashimg;display="Prism Image"
 /vbmeta_samsung	emmc		/dev/block/platform/13520000.ufs/by-name/vbmeta_samsung
